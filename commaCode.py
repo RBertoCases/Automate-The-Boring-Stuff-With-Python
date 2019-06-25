@@ -7,8 +7,8 @@
 spam = ['apples', 'bananas', 'tofu', 'cats']
 
 def comma_code(list):
-    for i in list[:-1]
-        print(i + ',', end='')
+    for i in list:
+        print(i + ',', end=' ')
     print('and ' + list[-1])
 
 comma_code(spam)
