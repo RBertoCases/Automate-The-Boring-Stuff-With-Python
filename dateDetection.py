@@ -10,4 +10,4 @@
 import re
 
 # regular expression for DD/MM/YYYY
-dateRegex = re.compile(r'((0[1-9]|1[0-2])\/(0[1-9]|[12]\d|3[01])(\/[12]\d{3}))')
+dateRegex = re.compile(r'((0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])(\/[12]\d{3}))')
