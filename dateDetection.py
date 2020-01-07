@@ -10,4 +10,14 @@
 import re
 
 # regular expression for DD/MM/YYYY
-dateRegex = re.compile(r'((0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])(\/[12]\d{3}))')
+dateRegex = re.compile(r'''(
+    (0[1-9]|[12]\d|3[01])            # day
+    \/                              # forward slash
+    (0[1-9]|1[0-2])                 # month 
+    \/                              # forward slash
+    ([12]\d{3})                    # year
+    )''', re.VERBOSE)
+
+text = 'today 01/01/2020'
+print(dateRegex.search(text))
+
