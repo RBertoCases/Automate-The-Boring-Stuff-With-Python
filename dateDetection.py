@@ -19,5 +19,5 @@ dateRegex = re.compile(r'''(
     )''', re.VERBOSE)
 
 text = 'today 01/01/2020'
-print(dateRegex.search(text))
+mo = dateRegex.search(text)
 
