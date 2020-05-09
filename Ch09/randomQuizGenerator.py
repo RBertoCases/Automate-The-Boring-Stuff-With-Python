@@ -39,7 +39,7 @@ for quizNum in range(35):
         quizFile.write('\n')
 
         # Write the answer key to a file.
-        answerKeyFile.write(f"{questionNum + 1} {'ABCD'[answerOptions.index(correctAnswer)]}")
+        answerKeyFile.write(f"{questionNum + 1} {'ABCD'[answerOptions.index(correctAnswer)]}\n")
 
     quizFile.close()
     answerKeyFile.close()        
