@@ -30,6 +30,6 @@ for quizNum in range(35):
         del wrongAnswers[wrongAnswers.index(correctAnswer)]
         wrongAnswers = random.sample(wrongAnswers, 3)
         answerOptions = wrongAnswers + [correctAnswer]
-        random.shuffle(answersOptions)
+        random.shuffle(answerOptions)
         # TODO: Write the question and answer options to the quiz file.
         # TODO: Write the answer key to a file.
