@@ -14,16 +14,14 @@ datePattern = re.compile(r"""^(.*?) # all text before the date
 
 # Loop over the files in the working directory.
 for amerFilename in os.listdir('.'):
-
     mo = datePattern.search(amerFilename)
 
 # Skip files without a date.
     if mo == None:
-
         continue
 
 # Get the different parts of the filename.
-    beforePart =  mo.group(1)
+    beforePart = mo.group(1)
     monthPart = mo.group(2)
     dayPart = mo.group(4)
     yearPart = mo.group(6)
