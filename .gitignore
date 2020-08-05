@@ -3,7 +3,7 @@ __pycache__/
 .idea/
 .vscode/
 xkcd/
-
+.venv/
 
 # Compiled source #
 ###################
