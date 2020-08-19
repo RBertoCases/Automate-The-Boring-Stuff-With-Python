@@ -1,5 +1,5 @@
 from selenium import webdriver
-browser = webdriver.Firefox()
+browser = webdriver.Chrome()
 browser.get('https://inventwithpython.com')
 try:
     elem = browser.find_element_by_class_name('cover-thumb')
